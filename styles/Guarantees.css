@@ -1,0 +1,7 @@
+.guarantees-img {
+    width: 100%;
+    height: 380px;
+    background-image: url('../images/white\ headphones.png');
+    background-size: cover;
+    margin-bottom: 32px;
+}

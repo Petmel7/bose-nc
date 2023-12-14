@@ -1,4 +1,4 @@
-<footer>
+<footer class="container">
     <img src="" alt="">
     <h2>Feedback</h2>
     <p>We'll help you find the right headphones for you.</p>

@@ -1,0 +1,13 @@
+
+
+.luxury-img {
+    width: 100%;
+    height: 380px;
+    background-image: url('../images/headphones\ sunset.png');
+    background-size: cover;
+    margin-bottom: 32px;
+}
+
+.luxury-block {
+    margin-bottom: 42px;
+}

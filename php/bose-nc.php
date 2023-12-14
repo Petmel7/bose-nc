@@ -1,4 +1,4 @@
-<section>
+<section class="container">
     <h2>DOSE NC 700</h2>
     <img src="" alt="">
     <p>Availability in stores</p>

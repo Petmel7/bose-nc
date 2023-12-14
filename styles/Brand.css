@@ -1,0 +1,15 @@
+.brand-img {
+    width: 100%;
+    height: 380px;
+    background-image: url('../images/history.png');
+    background-size: cover;
+    margin-bottom: 32px;
+}
+
+.brand-img--two {
+    width: 100%;
+    height: 380px;
+    background-image: url('../images/history\ two.png');
+    background-size: cover;
+    margin-bottom: 32px;
+}

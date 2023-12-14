@@ -1,0 +1,10 @@
+
+.reviews-video {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 32px;
+}
+
+.reviews-text--red {
+    color: var(--accent-color);
+}
