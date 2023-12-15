@@ -1,31 +1,51 @@
 <footer class="container">
-    <img src="" alt="">
-    <h2>Feedback</h2>
-    <p>We'll help you find the right headphones for you.</p>
+    <div class="footer-img"></div>
+    <h2 class="general-title">FEEDBACK</h2>
+    <p class="footer-text">We'll help you find the right headphones for you.</p>
 
-    <form action="">
-        <label for="">
-            <input type="text" placeholder="Your name">
+    <form class="form" action="">
+        <label class="form-label" for="">
+            <input class="form-input" type="text" placeholder="Your name">
         </label>
-        <label for="">
-            <input type="email" placeholder="Your e-mail">
+        <label class="form-label" for="">
+            <input class="form-input" type=" email" placeholder="Your e-mail">
         </label>
-        <label for="">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Send us a message"></textarea>
+        <label class="form-label" for="">
+            <textarea class="form-input form-textarea" name="" id="" cols=" 30" rows="10" placeholder="Send us a message"></textarea>
         </label>
-        <label for="">
-            <input type="checkbox">
-            <p>I agree to the privacy policy</p>
+        <label class="checkbox" for="">
+            <input class="checkbox-input" type="checkbox">
+            <p class="checkbox-text">I agree to the <span class="privacy-policy"><a href="">privacy policy</a></span></p>
         </label>
-        <button type="submit">send</button>
-        <p>Characteristics</p>
-        <p>History</p>
-        <p>Reviews</p>
-        <p>Payment and delivery</p>
-        <p>Store addresses</p>
-        <p>FAQ</p>
-        <p>8 (800) 111-11-11</p>
+
+        <button class="form-button" type="submit">SEND</button>
     </form>
+
+    <div class="footer-block">
+        <ul class="footer-children">
+            <li>
+                <p>Characteristics</p>
+            </li>
+            <li>
+                <p>History</p>
+            </li>
+            <li>
+                <p>Reviews</p>
+            </li>
+        </ul>
+        <ul class="footer-children footer-right">
+            <li>
+                <p>Payment and delivery</p>
+            </li>
+            <li>
+                <p>Store addresses</p>
+            </li>
+            <li>
+                <p>FAQ</p>
+            </li>
+        </ul>
+    </div>
+    <p class="footer-number">8 (800) 111-11-11</p>
 </footer>
 
 </body>

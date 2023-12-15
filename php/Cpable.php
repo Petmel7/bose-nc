@@ -1,5 +1,5 @@
 <section class="container">
-    <h2 class="capable-title">CAPABLE OF SO MUCH</h2>
+    <h2 class="capable-title general-title">CAPABLE OF SO MUCH</h2>
     <ul class="capable-list">
         <li>Ability to receive calls</li>
         <li>Rich and powerful sound</li>

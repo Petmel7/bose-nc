@@ -1,0 +1,18 @@
+.faq-children {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.faq-number {
+    font-size: 20px;
+    font-weight: var(--font-normal);
+    color: var(--title-text-color);
+    margin-right: 16px;
+}
+
+.faq-text {
+    font-size: 14px;
+    font-weight: var(--font-normal);
+    color: var(--text-color);
+}

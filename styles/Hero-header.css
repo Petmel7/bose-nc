@@ -1,22 +1,8 @@
-/* Hero-header */
-
-/* .logo .logo-icon--svg {
-    width: 270px;
-    height: 32px;
-    fill: var(--title-text-color);
-}
-
-.burger .burger-icon--svg {
-    width: 50px;
-    height: 32px;
-    fill: var(--title-text-color);
-} */
 
 .svg-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .logo,
@@ -29,28 +15,31 @@
 .logo-icon--svg,
 .burger-icon--svg {
     fill: var(--title-text-color);
-    transform: scale(0.5);
+    transform: scale(0.7);
 }
 
 .logo-icon--svg {
     width: 265px;
     height: 32px;
-    
+    transform-origin: left;
 }
 
 .burger-icon--svg {
-    width: 50px;
+    width: 55px;
     height: 32px;
+    transform-origin: right;
 }
-
-
-
 
 .hero-header--text {
     font-size: 14px;
     font-weight: var(--font-normal);
     color: var(--text-color);
     margin-bottom: 16px;
+    max-width: 222px;
+}
+
+.hero-width {
+    max-width: 93px;
 }
 
 .hero-header--title {
@@ -58,6 +47,7 @@
     font-weight: var(--font-middle);
     color: var(--text-color);
     margin: 32px 0;
+    max-width: 234px;
 }
 
 .general {

@@ -1,5 +1,5 @@
 <section class="container">
-    <h2 class="general-title">PREMIUM DESIGN AND COMFORT</h2>
+    <h2 class="design-title general-title">PREMIUM DESIGN AND COMFORT</h2>
     <h3 class="general-title--small">Premium design and comfort</h3>
     <p class="general-text">With the new Bose Noise Canceling Headphone 700, you can smoothly increase or decrease the level of noise cancellation. You can be heard perfectly and you hear the interlocutor clearly, even in a noisy environment!</p>
     <h3 class="general-title--small">Comfort up to max level</h3>
