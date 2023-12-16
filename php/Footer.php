@@ -48,6 +48,8 @@
     <p class="footer-number">8 (800) 111-11-11</p>
 </footer>
 
+<script src="php/burger.js"></script>
+
 </body>
 
 </html>

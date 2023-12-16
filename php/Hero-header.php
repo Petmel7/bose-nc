@@ -36,7 +36,7 @@
                 </a>
             </div>
 
-            <div class="burger">
+            <div class="burger" onclick="toggleMenu()">
                 <a href="#" class="burger-icon">
                     <svg class="burger-icon--svg">
                         <use href="images.svg/symbol-defs.svg#icon-hamburger"></use>
@@ -44,6 +44,17 @@
                 </a>
             </div>
         </div>
+
+        <nav class="menu">
+            <div class="close-icon"></div>
+            <ul>
+                <li><a href="#">Characteristics</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Payment and delivery</a></li>
+            </ul>
+        </nav>
+
         <p class="hero-header--text">Noise cancellation headphones that are capable for a lot of things</p>
         <p class="hero-width hero-header--text">Up to 20 hours of playback</p>
         <h1 class="hero-header--title">HEADPHONES BOSE NC 700</h1>
