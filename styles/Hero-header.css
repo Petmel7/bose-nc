@@ -24,11 +24,16 @@
     transform-origin: left;
 }
 
-.burger-icon--svg {
+/* .burger-icon--svg {
     width: 55px;
     height: 32px;
     transform-origin: right;
 }
+
+.burger-close {
+    width: 60px;
+    height: 60px;
+} */
 
 .hero-header--text {
     font-size: 14px;
@@ -66,15 +71,17 @@
 .menu {
     display: none;
     position: fixed;
-    top: 0;
+    top: 9%;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #191919;
     z-index: 1000;
     overflow-y: auto;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 1.5s ease-in-out;
     transform: translateY(-100%);
+    padding: 20px;
+    padding-top: 50px;
 }
 
 .menu.active {
@@ -82,23 +89,79 @@
     transform: translateY(0);
 }
 
+.menu-list--children {
+    margin-bottom: 24px;
+}
+
+.menu-list--children a {
+    font-size: 14px;
+    font-weight: var(--font-normal);
+    color: var(--text-color);
+}
+
 .close-icon {
     
 }
 
-/* .container {
-    position: relative;
+/* Burger-svg */
+
+body {
+    /* background-color: #03A9F4; */
+    display: grid;
+    place-items: center;
+    height: 30rem;
+
+    .hamburger-icon {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: relative;
+
+        .stroke {
+            width: 50px;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+
+            &:first-child {
+                top: 0%;
+                transform: translateY(0%);
+
+            }
+
+            &:nth-child(2) {
+                top: 50%;
+                transform: translateY(-50%);
+                opacity: 1;
+            }
+
+            &:last-child {
+                top: 100%;
+                transform: translateY(-2.1875rem);
+            }
+
+            &.active {
+                top: 50%;
+
+                &:first-child {
+                    transform: translateY(-50%) rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:last-child {
+                    transform: translateY(-50%) rotate(135deg);
+                }
+            }
+        }
+    }
 }
 
-.menu {
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    transition: bottom 0.3s ease-in-out;
-}
 
-.menu.active {
-    bottom: 0;
-} */
+

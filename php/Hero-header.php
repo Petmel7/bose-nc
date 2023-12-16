@@ -36,22 +36,45 @@
                 </a>
             </div>
 
-            <div class="burger" onclick="toggleMenu()">
+            <!-- <div class="burger pinpong" onclick="toggleMenu()">
                 <a href="#" class="burger-icon">
                     <svg class="burger-icon--svg">
                         <use href="images.svg/symbol-defs.svg#icon-hamburger"></use>
                     </svg>
                 </a>
             </div>
+
+            <div class="burger pinpong2" onclick="toggleMenu()">
+                <a href="#" class="burger-icon">
+                    <svg class="burger-close burger-icon--svg">
+                        <use href="images.svg/symbol-defs-close.svg#icon-close-large"></use>
+                    </svg>
+                </a>
+            </div> -->
+
+            <div class="hamburger-icon">
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+            </div>
+
         </div>
 
         <nav class="menu">
             <div class="close-icon"></div>
-            <ul>
-                <li><a href="#">Characteristics</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Payment and delivery</a></li>
+            <ul class="menu-list">
+                <li class="menu-list--children">
+                    <a href="#">Characteristics</a>
+                </li>
+                <li class="menu-list--children">
+                    <a href="#">History</a>
+                </li>
+                <li class="menu-list--children">
+                    <a href="#">Reviews</a>
+                </li>
+                <li class="menu-list--children">
+                    <a href="#">Payment and delivery</a>
+                </li>
             </ul>
         </nav>
 
