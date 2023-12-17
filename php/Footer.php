@@ -49,6 +49,7 @@
 </footer>
 
 <script src="php/burger.js"></script>
+<script src="php/FAQ.js"></script>
 
 </body>
 

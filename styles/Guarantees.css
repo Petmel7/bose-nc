@@ -5,3 +5,14 @@
     background-size: cover;
     margin-bottom: 32px;
 }
+
+.guarantees h3::before {
+    content: '';
+    display: inline-block;
+    display: flex;
+    width: 13px;
+    height: 13px;
+    margin-bottom: 24px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}

@@ -6,14 +6,14 @@
     <p class="general-text">Bose's frustration grew into a firm determination to build audio equipments that would reproduce sound with impeccable accuracy and naturalness</p>
     <div class="brand-img--two"></div>
 
-    <div class="">
-        <a href="#" class="burger-icon">
-            <svg class="">
+    <div class="brand">
+        <a href="#" class="">
+            <svg class="brand-svg">
                 <use href="./images.svg/symbol-defs.svg#icon-untitled"></use>
             </svg>
         </a>
     </div>
 
     <h3 class="general-title--small">Never stop dreaming. Always dream of the best, and think about how to achieve it.</h3>
-    <p class="general-text">Amar Bose is a company founder </p>
+    <p class="brand-text">Amar Bose is a company founder </p>
 </section>

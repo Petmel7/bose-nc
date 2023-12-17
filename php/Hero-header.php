@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bose</title>
 
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/Hero-header.css">
@@ -36,26 +40,10 @@
                 </a>
             </div>
 
-            <!-- <div class="burger pinpong" onclick="toggleMenu()">
-                <a href="#" class="burger-icon">
-                    <svg class="burger-icon--svg">
-                        <use href="images.svg/symbol-defs.svg#icon-hamburger"></use>
-                    </svg>
-                </a>
-            </div>
-
-            <div class="burger pinpong2" onclick="toggleMenu()">
-                <a href="#" class="burger-icon">
-                    <svg class="burger-close burger-icon--svg">
-                        <use href="images.svg/symbol-defs-close.svg#icon-close-large"></use>
-                    </svg>
-                </a>
-            </div> -->
-
-            <div class="hamburger-icon">
-                <div class="stroke"></div>
-                <div class="stroke"></div>
-                <div class="stroke"></div>
+            <div class="burger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
 
         </div>
@@ -77,7 +65,9 @@
                 </li>
             </ul>
         </nav>
+    </header>
 
+    <section class="container">
         <p class="hero-header--text">Noise cancellation headphones that are capable for a lot of things</p>
         <p class="hero-width hero-header--text">Up to 20 hours of playback</p>
         <h1 class="hero-header--title">HEADPHONES BOSE NC 700</h1>
@@ -87,4 +77,4 @@
         </div>
 
         <div class="hero-header--img"></div>
-    </header>
+    </section>

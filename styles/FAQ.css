@@ -1,17 +1,61 @@
 .faq-children {
-    display: flex;
-    align-items: center;
+    padding-bottom: 28px;
+    border-bottom: 3px solid #4c4c4c;
     margin-bottom: 24px;
 }
 
+.faq-blokc {
+    display: flex;
+    margin-bottom: 16px;
+}
+
 .faq-number {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: var(--font-normal);
     color: var(--title-text-color);
     margin-right: 16px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    line-height: 95%;
 }
 
 .faq-text {
+    font-size: 20px;
+    font-weight: var(--font-normal);
+    color: var(--text-color);
+    max-width: 300px;
+}
+
+.faq-blokc {
+    position: relative;
+}
+
+.faq-blokc::after {
+    content: '?';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background-color: #4c4c4c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.faq-answer {
+    display: none;
+}
+
+.faq-answer.visible {
+    display: block;
+}
+
+.faq-open {
     font-size: 14px;
     font-weight: var(--font-normal);
     color: var(--text-color);
