@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="styles/FAQ.css">
     <link rel="stylesheet" href="styles/Bose-nc.css">
     <link rel="stylesheet" href="styles/Footer.css">
+    <link rel="stylesheet" href="styles/bose-modal.css">
 </head>
 
 <body>
@@ -73,7 +74,7 @@
         <h1 class="hero-header--title">HEADPHONES BOSE NC 700</h1>
 
         <div class="general">
-            <button class="general-button">ORDER</button>
+            <button class="general-button" onclick="openModal()">ORDER</button>
         </div>
 
         <div class="hero-header--img"></div>

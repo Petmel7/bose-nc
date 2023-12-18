@@ -1,17 +1,66 @@
-.bose-nc--img {
+.bose-nc--img, 
+.bose-white--img {
     width: 100%;
     height: 420px;
-    background-image: url('../images/black\ headphones.png');
     background-size: cover;
     margin-bottom: 32px;
 }
 
+.bose-nc--img {
+    background-image: url('../images/black\ headphones.png');
+}
+
 .bose-white--img {
-    width: 100%;
-    height: 420px;
+    display: none;
     background-image: url('../images/white.png');
-    background-size: cover;
-    margin-bottom: 32px;
+}
+
+.checkbox-block {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    position: relative;
+    margin-right: 24px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    background-color: white;
+}
+
+.checkbox-label::before {
+    content: '';
+    position: absolute;
+    top: -8.5px;
+    left: -8.5px;
+    width: calc(100% + 17px);
+    height: calc(100% + 17px);
+    border-radius: 50%;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.checkbox input[type="checkbox"]:checked+.checkbox-label {
+    border: 3px solid var(--accent-color);
+}
+
+.black {
+    background-color: black;
 }
 
 .bose-nc--checkbox {
@@ -46,50 +95,3 @@
     margin-top: 32px;
     margin-bottom: 24px;
 }
-
-/* .bose-nc--children {
-    position: relative;
-}
-
-.bose-nc--children::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 32px;
-    height: 32px;
-    border-top: 3px solid red;
-    border-right: 3px solid red;
-    border-bottom: 5px solid red;
-    transform: rotate(45deg);
-    margin-bottom: 10px;
-} */
-
-/* .bose-nc--children .general-text::after {
-    border-bottom: 5px solid red;
-    transform: rotate(-45deg);
-} */
-
-/* .bose-nc--children::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-left: 40px solid transparent;
-    border-bottom: 40px solid red;
-} */
-
-/* .bose-nc--children::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-bottom: 10px solid red;
-    transform: rotate(45deg);
-} */

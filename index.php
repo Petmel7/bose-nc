@@ -8,4 +8,5 @@
 <?php require './php/Reviews.php'; ?>
 <?php require './php/FAQ.php'; ?>
 <?php require './php/bose-nc.php'; ?>
+<?php require './php/Bose-modal.php'; ?>
 <?php require './php/Footer.php'; ?>

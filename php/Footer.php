@@ -50,6 +50,8 @@
 
 <script src="php/burger.js"></script>
 <script src="php/FAQ.js"></script>
+<script src="php/bose-checkbox.js"></script>
+<script src="php/bose-modal.js"></script>
 
 </body>
 
