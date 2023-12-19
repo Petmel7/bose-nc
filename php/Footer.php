@@ -13,10 +13,18 @@
         <label class="form-label" for="">
             <textarea class="form-input form-textarea" name="" id="" cols=" 30" rows="10" placeholder="Send us a message"></textarea>
         </label>
-        <label class="checkbox" for="">
-            <input class="checkbox-input" type="checkbox">
-            <p class="checkbox-text">I agree to the <span class="privacy-policy"><a href="">privacy policy</a></span></p>
-        </label>
+
+        <div class="form-checkbox">
+            <input class="form-checkbox--input" type="checkbox" id="checkbox">
+            <label class="form-checkbox--label" for="checkbox">
+                <div class="form-checkbox--icon">
+                    <svg class="form-checkbox--svg">
+                        <use href="images.svg/symbol-defs-galka.svg#icon-galka"></use>
+                    </svg>
+                </div>
+                <p class="checkbox-text">I agree to the <span class="privacy-policy"><a href="#">privacy policy</a></span></p>
+            </label>
+        </div>
 
         <button class="form-button" type="submit">SEND</button>
     </form>
@@ -52,6 +60,8 @@
 <script src="php/FAQ.js"></script>
 <script src="php/bose-checkbox.js"></script>
 <script src="php/bose-modal.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+<script src="php/reviews-slider.js"></script>
 
 </body>
 
