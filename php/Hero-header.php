@@ -69,13 +69,17 @@
     </header>
 
     <section class="container">
-        <p class="hero-header--text">Noise cancellation headphones that are capable for a lot of things</p>
-        <p class="hero-width hero-header--text">Up to 20 hours of playback</p>
-        <h1 class="hero-header--title">HEADPHONES BOSE NC 700</h1>
+        <div class="hero-block">
+            <div>
+                <p class="hero-header--text">Noise cancellation headphones that are capable for a lot of things</p>
+                <p class="hero-width hero-header--text">Up to 20 hours of playback</p>
+                <h1 class="hero-header--title">HEADPHONES BOSE NC 700</h1>
 
-        <div class="general">
-            <button class="general-button" onclick="openModal()">ORDER</button>
+                <div class="general">
+                    <button class="general-button" onclick="openModal()">ORDER</button>
+                </div>
+            </div>
+
+            <div class="hero-header--img"></div>
         </div>
-
-        <div class="hero-header--img"></div>
     </section>

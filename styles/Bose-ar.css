@@ -1,9 +1,24 @@
 
-
 .bose-img {
     width: 100%;
     height: 380px;
     background-image: url('../images/listens\ to\ music.png');
     background-size: cover;
     margin-bottom: 32px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+    .bose-ar--block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bose-ar-text {
+        max-width: 300px;
+    }
+
+    .bose-img {
+        max-width: 354px;
+        height: 297px;
+    }
 }

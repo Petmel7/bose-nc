@@ -16,3 +16,13 @@
     background-color: var(--accent-color);
     border-radius: 50%;
 }
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+    .guarantees {
+
+    }
+
+    .guarantees-img {
+        
+    }
+}

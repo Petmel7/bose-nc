@@ -8,3 +8,22 @@
     background-image: url('../images/headphones\ girl.png');
     background-size: cover;
 }
+
+/* Media */
+
+@media screen and (min-width: 480px) and (max-width: 769px)  {
+    .design-block {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .design-text {
+        max-width: 300px;
+    }
+
+    .design-img {
+        max-width: 350px;
+        max-height: 540px;
+    }
+}

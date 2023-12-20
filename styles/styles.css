@@ -30,13 +30,13 @@ body {
     .container {
         max-width: 768px
     }
-}
-
-@media screen and (max-width: 767px) {
-    .container {
-        width: 767px;
-    }
 } */
+
+@media screen and (max-width: 769px) {
+    .container {
+        width: 768px;
+    }
+}
 
 @media screen and (max-width: 480px) {
     .container {
@@ -91,4 +91,17 @@ span {
     font-weight: var(--font-normal);
     color: var(--text-color);
     margin-bottom: 24px;
+}
+
+/* Media */
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+    .general-button {
+        max-width: 294px;
+        padding: 20px 0;
+    }
+
+    .general-text {
+        max-width: 300px;
+    }
 }
