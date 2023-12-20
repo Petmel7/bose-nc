@@ -23,3 +23,38 @@
 .brand-text {
     color: var(--input-color);
 }
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+    .brand-article {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .brand-title {
+        max-width: 220px;
+    }
+
+    .brand-title--text {
+        margin-bottom: 85px;
+    }
+
+    .brand-img {
+        max-width: 354px;
+        height: 524px;
+    }
+
+    .brand-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .brand-img--two {
+        max-width: 294px;
+        height: 355px;
+    }
+
+    .general-title--small {
+        max-width: 300px;
+    }
+}

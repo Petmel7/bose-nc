@@ -47,3 +47,20 @@
 .pagination-item.active {
     color: var(--accent-color);
 }
+
+/* Media */
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+    .reviews-block {
+        text-align: left;
+    }
+    
+    .reviews-video {
+        max-width: 648px;
+        height: 417px;
+    }
+
+    .reviews-text {
+        max-width: 500px;
+    }
+}

@@ -19,10 +19,13 @@
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
     .guarantees {
-
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     .guarantees-img {
-        
+        max-width: 354px;
+        height: 442px;
     }
 }
