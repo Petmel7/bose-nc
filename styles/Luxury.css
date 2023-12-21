@@ -40,7 +40,8 @@
         width: 100%;
         height: 293px;
         background-image: url('../images/sunset-tablet.png');
-        background-size: cover;
+        /* background-size: cover; */
+        background-size: contain;
         background-position: center center;
         margin-bottom: 32px;
     }
