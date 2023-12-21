@@ -1,17 +1,18 @@
-.brand-img {
-    width: 100%;
-    height: 380px;
-    background-image: url('../images/history.png');
-    background-size: cover;
-    margin-bottom: 32px;
-}
-
+.brand-img, 
 .brand-img--two {
     width: 100%;
     height: 380px;
-    background-image: url('../images/history\ two.png');
     background-size: cover;
+    background-position: center center;
     margin-bottom: 32px;
+}
+
+.brand-img {
+    background-image: url('../images/history.png');
+}
+
+.brand-img--two {
+    background-image: url('../images/history\ two.png');
 }
 
 .brand-svg {
@@ -38,8 +39,12 @@
         margin-bottom: 85px;
     }
 
+    .brand-img--block {
+        transform: translateX(17%);
+    }
+
     .brand-img {
-        max-width: 354px;
+        width: 355px;
         height: 524px;
     }
 
@@ -52,6 +57,7 @@
     .brand-img--two {
         max-width: 294px;
         height: 355px;
+        margin-bottom: 0;
     }
 
     .general-title--small {

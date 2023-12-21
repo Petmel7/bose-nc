@@ -7,13 +7,13 @@
             <p class="general-text">From Amar's point of view, the sound was so flat and unnatural that it was better not to listen to the music at all than to listen to it in such a distorted form.</p>
         </div>
 
-        <div>
+        <div class="brand-img--block">
             <div class="brand-img"></div>
             <p class="general-text">Bose's frustration grew into a firm determination to build audio equipments that would reproduce sound with impeccable accuracy and naturalness</p>
         </div>
     </article>
 
-    <div class="brand-block">
+    <article class="brand-block">
         <div class="brand-img--two"></div>
 
         <div>
@@ -28,5 +28,5 @@
             <h3 class="general-title--small">Never stop dreaming. Always dream of the best, and think about how to achieve it.</h3>
             <p class="brand-text">Amar Bose is a company founder </p>
         </div>
-    </div>
+    </article>
 </section>

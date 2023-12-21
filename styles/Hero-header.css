@@ -54,6 +54,7 @@
     height: 394px;
     background-image: url('../images/headphone.png');
     background-size: cover;
+    background-position: center center;
 }
 
 /* Burger menu */
@@ -120,10 +121,6 @@
 /* Media */
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
-    /* .burger {
-        width: 30px;
-        height: 20px;
-    } */
 
     .menu {
         max-height: 250px;
@@ -142,5 +139,6 @@
     .hero-header--img {
         max-width: 354px;
         height: 394px;
+        transform: translateX(17%);
     }
 }

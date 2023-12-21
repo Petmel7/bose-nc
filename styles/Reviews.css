@@ -13,9 +13,13 @@
     width: 100%;
     scroll-snap-align: start;
     display: flex;
+    flex-direction: column;
+}
+
+.reviews-video--block {
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .reviews-video {
@@ -27,10 +31,6 @@
 
 .reviews-text--red {
     color: var(--accent-color);
-}
-
-.pagination {
-    text-align: center;
 }
 
 .pagination-item {
@@ -51,16 +51,14 @@
 /* Media */
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
-    .reviews-block {
-        text-align: left;
-    }
     
     .reviews-video {
-        max-width: 648px;
+        width: 100%;
         height: 417px;
     }
 
     .reviews-text {
         max-width: 500px;
+        margin-bottom: 32px;
     }
 }

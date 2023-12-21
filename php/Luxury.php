@@ -1,7 +1,10 @@
-<section class="container">
+<section class="luxury-container">
     <h2 class="luxury-title general-title">THE LUXURY OF SILENCE</h2>
     <div class="luxury-img"></div>
     <div class="luxury-two--img"></div>
+</section>
+
+<section class="container">
     <article class="luxury-article">
         <div class="luxury-block">
             <h3 class="general-title--small">Maximum enjoyment</h3>

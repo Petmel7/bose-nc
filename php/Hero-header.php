@@ -79,7 +79,6 @@
                     <button class="general-button" onclick="openModal()">ORDER</button>
                 </div>
             </div>
-
             <div class="hero-header--img"></div>
         </div>
     </section>

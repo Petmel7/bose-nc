@@ -1,6 +1,9 @@
 .faq-children {
     padding-bottom: 28px;
     border-bottom: 3px solid #4c4c4c;
+}
+
+.faq-children:not(:last-child) {
     margin-bottom: 24px;
 }
 

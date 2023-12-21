@@ -1,10 +1,10 @@
-.footer-img {
+/* .footer-img {
     width: 100%;
     height: 380px;
     background-image: url('../images/getting\ dark.png');
     background-size: cover;
     margin-bottom: 32px;
-}
+} */
 
 .form {
     margin-bottom: 72px;
@@ -119,7 +119,6 @@
 .footer-block {
     display: flex;
     margin-bottom: 52px;
-    justify-content: space-between;
 }
 
 .footer-children li {
@@ -135,6 +134,44 @@
     color: var(--text-color);
 }
 
-.footer-right {
-    text-align: right;
+/* Media */
+
+@media screen and (max-width: 480px) {
+    .footer-img {
+        width: 100%;
+        height: 380px;
+        background-image: url('../images/getting\ dark.png');
+        background-size: cover;
+        margin-bottom: 32px;
+    }
+
+    .footer-block {
+        justify-content: space-between;
+    }
+
+    .footer-right {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+    .footer-img {
+        width: 100%;
+        height: 360px;
+        background-image: url('../images/darck\ tablet.png');
+        background-size: cover;
+        margin-bottom: 32px;
+    }
+    .form-button {
+        max-width: 294px;
+        padding: 21px 0;
+    }
+
+    .footer-children {
+        margin-right: 100px;
+    }
+
+    .footer-number {
+        text-align: right;
+    }
 }

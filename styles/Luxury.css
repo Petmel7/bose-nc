@@ -14,10 +14,22 @@
 
 /* Media */
 
+@media screen and (max-width: 480px) {
+    .luxury-container {
+        width: 479px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
 @media screen and (min-width: 480px) and (max-width: 769px) {
+    .luxury-container {
+        width: 830px;
+    }
+
     .luxury-title {
         text-align: right;
-        margin-right: 50px;
+        margin-right: 60px;
     }
 
     .luxury-img {
@@ -29,12 +41,17 @@
         height: 293px;
         background-image: url('../images/sunset-tablet.png');
         background-size: cover;
+        background-position: center center;
         margin-bottom: 32px;
     }
 
     .luxury-article {
         display: flex;
         justify-content: space-between;
+    }
+
+    .luxury-block {
+        margin-bottom: 0;
     }
 
     .general-text {

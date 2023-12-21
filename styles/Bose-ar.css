@@ -20,5 +20,7 @@
     .bose-img {
         max-width: 354px;
         height: 297px;
+        margin-bottom: 0;
+        transform: translateX(17%);
     }
 }
