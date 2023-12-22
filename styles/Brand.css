@@ -25,7 +25,7 @@
     color: var(--input-color);
 }
 
-@media screen and (min-width: 480px) and (max-width: 769px) {
+@media screen and (min-width: 480px) {
     .brand-article {
         display: flex;
         justify-content: space-between;

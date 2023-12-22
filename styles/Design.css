@@ -12,7 +12,7 @@
 
 /* Media */
 
-@media screen and (min-width: 480px) and (max-width: 769px)  {
+@media screen and (min-width: 480px) {
     .design-block {
         display: flex;
         justify-content: space-between;

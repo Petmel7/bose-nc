@@ -99,7 +99,7 @@
 
 /* Media */
 
-@media screen and (min-width: 480px) and (max-width: 769px) {
+@media screen and (min-width: 480px) {
     .bose-nc--img,
     .bose-white--img {
         height: 700px;

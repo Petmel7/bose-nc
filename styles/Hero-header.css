@@ -120,7 +120,7 @@
 
 /* Media */
 
-@media screen and (min-width: 480px) and (max-width: 769px) {
+@media screen and (min-width: 480px) {
 
     .menu {
         max-height: 250px;
