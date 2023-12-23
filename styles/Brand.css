@@ -64,3 +64,14 @@
         max-width: 300px;
     }
 }
+
+@media screen and (min-width: 1023px) {
+    .brand-img {
+        width: 700px;
+        height: 628px;
+    }
+
+    .brand-block {
+        max-width: 960px;
+    }
+}

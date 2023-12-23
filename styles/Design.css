@@ -29,3 +29,22 @@
         transform: translateX(-17%);
     }
 }
+
+/* ====================================== */
+
+/* Media для desktop */
+
+@media screen and (min-width: 1023px) {
+    .design-img {
+        max-width: 590px;
+        height: 616px;
+    }
+
+    .design-title {
+        max-width: 550px;
+    }
+
+    .design-text {
+        max-width: 550px;
+    }
+}

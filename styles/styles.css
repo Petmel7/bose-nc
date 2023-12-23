@@ -34,14 +34,14 @@ body {
 
 @media screen and (min-width: 480px) {
     .container {
-        width: 828px;
+        width: 1023px;
         padding: 0 60px;
     }
 }
 
 @media screen and (min-width: 1023px) {
     .container {
-        width: 1400px;
+        width: 1440px;
         padding: 0 100px;
     }
 }
@@ -123,5 +123,26 @@ span {
 
     .general-text:not(:last-child) {
         margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .general-button {
+        max-width: 400px;
+        font-size: 20px;
+    }
+
+    .general-title {
+        font-size: 54px;
+    }
+
+    .general-title--small {
+        font-size: 28px;
+        max-width: 550px;
+    }
+
+    .general-text {
+        font-size: 20px;
+        max-width: 550px;
     }
 }

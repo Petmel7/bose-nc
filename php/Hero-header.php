@@ -32,40 +32,43 @@
 <body>
     <header class="container">
 
-        <div class="svg-block">
-            <div class="logo">
-                <a href="#" class="logo-icon">
-                    <svg class="logo-icon--svg">
-                        <use href="images.svg/symbol-defs.svg#icon-bose-logo"></use>
-                    </svg>
-                </a>
+        <div class="header-block">
+            <div class="svg-block">
+                <div class="logo">
+                    <a href="#" class="logo-icon">
+                        <svg class="logo-icon--svg">
+                            <use href="images.svg/symbol-defs.svg#icon-bose-logo"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="burger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
             </div>
 
-            <div class="burger" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-
+            <nav class="menu">
+                <div class="close-icon"></div>
+                <ul class="menu-list">
+                    <li class="menu-list--children">
+                        <a href="#">Characteristics</a>
+                    </li>
+                    <li class="menu-list--children">
+                        <a href="#">History</a>
+                    </li>
+                    <li class="menu-list--children">
+                        <a href="#">Reviews</a>
+                    </li>
+                    <li class="menu-list--children">
+                        <a href="#">Payment and delivery</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
-        <nav class="menu">
-            <div class="close-icon"></div>
-            <ul class="menu-list">
-                <li class="menu-list--children">
-                    <a href="#">Characteristics</a>
-                </li>
-                <li class="menu-list--children">
-                    <a href="#">History</a>
-                </li>
-                <li class="menu-list--children">
-                    <a href="#">Reviews</a>
-                </li>
-                <li class="menu-list--children">
-                    <a href="#">Payment and delivery</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <section class="container">

@@ -24,7 +24,7 @@
 
 @media screen and (min-width: 480px) {
     .luxury-container {
-        width: 828px;
+        width: 1023px;
         margin: 0 auto;
     }
 
@@ -57,5 +57,16 @@
 
     .general-text {
         max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .luxury-container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .luxury-two--img {
+        height: 524px;
     }
 }

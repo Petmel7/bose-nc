@@ -87,31 +87,6 @@
     transform: translateY(-8px) rotate(-45deg);
 }
 
-.menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #191919;
-    z-index: 1000;
-    overflow-y: auto;
-    transform: translateY(-100%);
-    transition: transform 2.0s ease-in-out;
-    padding: 20px;
-    padding-top: 150px;
-}
-
-.menu.active {
-    display: block;
-    transform: translateY(0%);
-}
-
-.menu-list--children {
-    margin-bottom: 24px;
-}
-
 .menu-list--children a {
     font-size: 20px;
     font-weight: var(--font-normal);
@@ -121,11 +96,6 @@
 /* Media */
 
 @media screen and (min-width: 480px) {
-
-    .menu {
-        max-height: 250px;
-        box-shadow: 0px 20px 80px 0px #000;
-    }
 
     .hero-block {
         display: flex;
@@ -140,5 +110,81 @@
         max-width: 354px;
         height: 394px;
         transform: translateX(17%);
+    }
+}
+
+/* ===================================== */
+
+/* Media для desktop */
+
+@media screen and (min-width: 1023px) {
+
+    .header-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .menu-list {
+        display: flex;
+    }
+
+    .menu-list--children:not(:last-child) {
+        margin-right: 77px;
+    }
+
+    .hero-header--text {
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    .hero-header--title {
+        font-size: 74px;
+        max-width: 550px;
+    }
+
+    .hero-header--img {
+        max-width: 700px;
+        height: 598px;
+    }
+}
+
+/* ============================================== */
+
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+    .menu {
+        max-height: 250px;
+        box-shadow: 0px 20px 80px 0px #000;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #191919;
+        z-index: 1000;
+        overflow-y: auto;
+        transform: translateY(-100%);
+        transition: transform 2.0s ease-in-out;
+        padding: 20px;
+        padding-top: 150px;
+    }
+
+    .menu.active {
+        display: block;
+        transform: translateY(0%);
+    }
+
+    .menu-list--children {
+        margin-bottom: 24px;
     }
 }

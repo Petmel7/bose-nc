@@ -18,3 +18,17 @@
     background-color: var(--accent-color);
     border-radius: 50%;
 }
+
+@media screen and (min-width: 1023px) {
+    .capable-block {
+        display: flex;
+    }
+
+    .capable-list {
+        font-size: 20px;
+    }
+
+    .capable-list:not(:last-child) {
+        margin-right: 220px;
+    }
+}
