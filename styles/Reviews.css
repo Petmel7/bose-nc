@@ -64,12 +64,44 @@
 }
 
 @media screen and (min-width: 1023px) {
+
+    .slider {
+        transform: translateX(-8%);
+    }
+    
     .reviews-block {
+        /* display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        justify-content: space-between; */
+
         display: flex;
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: stretch;
+            align-items: center;
+            justify-content: space-between;
+    }
+    
+    .reviews-video--block {
+        flex: 0 0 65%;
+    }
+    
+    .reviews-article {
+        flex: 0 0 25%;
     }
     
     .reviews-video {
-        max-width: 920px;
-        height: 590px;
+        /* max-width: 920px; */
+        height: 500px;
+    }
+
+    .pagination {
+        text-align: right;
+        transform: translate(-19.5%, -200%);
     }
 }
