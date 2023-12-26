@@ -1,5 +1,5 @@
+<div class="footer-img"></div>
 <footer class="container">
-    <div class="footer-img"></div>
     <h2 class="general-title">FEEDBACK</h2>
     <p class="footer-text">We'll help you find the right headphones for you.</p>
 

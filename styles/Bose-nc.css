@@ -105,3 +105,32 @@
         height: 700px;
     }
 }
+
+@media screen and (min-width: 1023px) {
+    .bose-nc--block {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+
+    .bose-nc--img,
+    .bose-white--img {
+        width: 700px;
+        height: 664px;
+        margin-bottom: 0;
+        transform: translateX(17%);
+    }
+
+    .bose-nc-- {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* max-width: 600px; */
+    }
+
+    .bose-nc--title {
+        text-align: left;
+        transform: translateY(150%)
+    }
+}

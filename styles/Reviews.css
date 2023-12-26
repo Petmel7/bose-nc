@@ -64,6 +64,9 @@
 }
 
 @media screen and (min-width: 1023px) {
+    .reviews-title {
+        transform: translate(-15.5%, 140%);
+    }
 
     .slider {
         transform: translateX(-8%);

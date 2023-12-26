@@ -1,5 +1,5 @@
 <section class="container">
-    <h2 class="general-title">REIVIES</h2>
+    <h2 class="reviews-title general-title">REIVIES</h2>
     <div class="slider">
 
         <div class="reviews-block">
