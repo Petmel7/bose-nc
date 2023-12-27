@@ -29,7 +29,7 @@
         max-width: 354px;
         height: 425px;
         margin-bottom: 0;
-        transform: translateX(-17%);
+        transform: translateX(-60px);
         background-size: contain;
     }
 }
@@ -38,5 +38,6 @@
     .guarantees-img {
         max-width: 590px;
         height: 565px;
+        transform: translateX(-100px);
     }
 }

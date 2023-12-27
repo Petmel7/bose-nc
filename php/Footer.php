@@ -1,59 +1,67 @@
 <div class="footer-img"></div>
 <footer class="container">
-    <h2 class="general-title">FEEDBACK</h2>
-    <p class="footer-text">We'll help you find the right headphones for you.</p>
-
-    <form class="form" action="">
-        <label class="form-label" for="">
-            <input class="form-input" type="text" placeholder="Your name">
-        </label>
-        <label class="form-label" for="">
-            <input class="form-input" type=" email" placeholder="Your e-mail">
-        </label>
-        <label class="form-label" for="">
-            <textarea class="form-input form-textarea" name="" id="" cols=" 30" rows="10" placeholder="Send us a message"></textarea>
-        </label>
-
-        <div class="form-checkbox">
-            <input class="form-checkbox--input" type="checkbox" id="checkbox">
-            <label class="form-checkbox--label" for="checkbox">
-                <div class="form-checkbox--icon">
-                    <svg class="form-checkbox--svg">
-                        <use href="images.svg/symbol-defs-galka.svg#icon-galka"></use>
-                    </svg>
-                </div>
-                <p class="checkbox-text">I agree to the <span class="privacy-policy"><a href="#">privacy policy</a></span></p>
-            </label>
+    <div class="footer-block">
+        <div>
+            <h2 class="footer-title general-title">FEEDBACK</h2>
+            <p class="footer-text">We'll help you find the right headphones for you.</p>
         </div>
 
-        <button class="form-button" type="submit">SEND</button>
-    </form>
+        <form class="footer-form" action="">
+            <label class="form-label" for="">
+                <input class="form-input" type="text" placeholder="Your name">
+            </label>
+            <label class="form-label" for="">
+                <input class="form-input" type=" email" placeholder="Your e-mail">
+            </label>
+            <label class="form-label" for="">
+                <textarea class="form-input form-textarea" name="" id="" cols=" 30" rows="10" placeholder="Send us a message"></textarea>
+            </label>
 
-    <div class="footer-block">
-        <ul class="footer-children">
-            <li>
-                <p>Characteristics</p>
-            </li>
-            <li>
-                <p>History</p>
-            </li>
-            <li>
-                <p>Reviews</p>
-            </li>
-        </ul>
-        <ul class="footer-children footer-right">
-            <li>
-                <p>Payment and delivery</p>
-            </li>
-            <li>
-                <p>Store addresses</p>
-            </li>
-            <li>
-                <p>FAQ</p>
-            </li>
-        </ul>
+            <div class="form-checkbox">
+                <input class="form-checkbox--input" type="checkbox" id="checkbox">
+                <label class="form-checkbox--label" for="checkbox">
+                    <div class="form-checkbox--icon">
+                        <svg class="form-checkbox--svg">
+                            <use href="images.svg/symbol-defs-galka.svg#icon-galka"></use>
+                        </svg>
+                    </div>
+                    <p class="checkbox-text">I agree to the <span class="privacy-policy"><a href="#">privacy policy</a></span></p>
+                </label>
+            </div>
+
+            <button class="form-button" type="submit">SEND</button>
+        </form>
     </div>
-    <p class="footer-number">8 (800) 111-11-11</p>
+
+    <div class="general-footer--block">
+        <div class="footer-block--list">
+            <ul class="footer-children">
+                <li>
+                    <p>Characteristics</p>
+                </li>
+                <li>
+                    <p>History</p>
+                </li>
+                <li>
+                    <p>Reviews</p>
+                </li>
+            </ul>
+            <ul class="footer-children footer-right">
+                <li>
+                    <p>Payment and delivery</p>
+                </li>
+                <li>
+                    <p>Store addresses</p>
+                </li>
+                <li>
+                    <p>FAQ</p>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="number-block"> -->
+        <p class="footer-number">8 (800) 111-11-11</p>
+        <!-- </div> -->
+    </div>
 </footer>
 
 <script src="php/burger.js"></script>

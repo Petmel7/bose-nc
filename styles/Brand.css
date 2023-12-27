@@ -40,7 +40,7 @@
     }
 
     .brand-img--block {
-        transform: translateX(17%);
+        transform: translateX(60px);
     }
 
     .brand-img {
@@ -60,18 +60,22 @@
         margin-bottom: 0;
     }
 
-    .general-title--small {
+    /* .general-title--small {
         max-width: 300px;
-    }
+    } */
 }
 
 @media screen and (min-width: 1023px) {
+    .brand-img--block {
+        transform: translateX(100px);
+    }
+
     .brand-img {
         width: 700px;
         height: 628px;
     }
 
-    .brand-block {
+    /* .brand-block {
         max-width: 960px;
-    }
+    } */
 }

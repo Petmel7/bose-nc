@@ -55,14 +55,15 @@
         margin-bottom: 0;
     }
 
-    .general-text {
+    /* .general-text {
         max-width: 300px;
-    }
+    } */
 }
 
 @media screen and (min-width: 1023px) {
     .luxury-container {
         width: 1440px;
+        /* width: 100%; */
         margin: 0 auto;
     }
 

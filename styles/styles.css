@@ -39,6 +39,8 @@ body {
 
 @media screen and (min-width: 1023px) {
     .container {
+        /* max-width: 1440px;
+        width: 100%; */
         width: 1440px;
         padding: 0 100px;
     }
@@ -114,8 +116,12 @@ span {
         padding: 20px 0;
     }
 
+    /* .general-title--small {
+        max-width: 300px;
+    } */
+
     .general-text {
-        /* max-width: 300px; */
+        max-width: 300px;
     }
 
     .general-text:not(:last-child) {
@@ -131,16 +137,16 @@ span {
 
     .general-title {
         font-size: 54px;
-        text-align: right;
+        /* text-align: right; */
     }
 
     .general-title--small {
         font-size: 28px;
-        /* max-width: 550px; */
+        max-width: 550px;
     }
 
     .general-text {
         font-size: 20px;
-        /* max-width: 550px; */
+        max-width: 550px;
     }
 }

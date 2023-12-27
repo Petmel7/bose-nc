@@ -69,7 +69,7 @@
     }
 
     .slider {
-        transform: translateX(-8%);
+        transform: translateX(-100px);
     }
     
     .reviews-block {
