@@ -107,7 +107,7 @@
     }
 
     .hero-header--img {
-        max-width: 354px;
+        max-width: 365px;
         height: 394px;
         transform: translateX(60px);
     }
@@ -146,7 +146,7 @@
     }
 
     .menu-list--children:not(:last-child) {
-        margin-right: 77px;
+        margin-right: 65px;
     }
 
     .menu-list--children a {
@@ -164,8 +164,8 @@
     }
 
     .hero-header--img {
-        max-width: 700px;
-        height: 598px;
+        max-width: 650px;
+        height: 550px;
         transform: translateX(100px);
     }
 }

@@ -32,19 +32,45 @@ body {
 
 @media screen and (min-width: 480px) {
     .container {
-        width: 1023px;
+        /* width: 1023px; */
+        width: 100%;
         padding: 0 60px;
     }
 }
 
+/* ================================= */
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+/* ================================== */
+
 @media screen and (min-width: 1023px) {
     .container {
-        /* max-width: 1440px;
-        width: 100%; */
-        width: 1440px;
+        width: 1640px;
+        /* width: 100%; */
         padding: 0 100px;
     }
 }
+
+/* @media screen and (min-width: 1440px) {
+    .container {
+        width: 100%;
+    }
+} */
+
+/* ========================================= */
+
+@media screen and (min-width: 1023px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* ========================================= */
 
 h1,
 h2,

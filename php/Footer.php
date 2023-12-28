@@ -1,4 +1,6 @@
-<div class="footer-img"></div>
+<section class="footer-container">
+    <div class="footer-img"></div>
+</section>
 <footer class="container">
     <div class="footer-block">
         <div>

@@ -19,7 +19,7 @@
                 </div>
             </div>
 
-            <ul class="xxxxxxxx">
+            <ul class="bose-nc--parens">
                 <li class="bose-nc--children">
                     <p class="bose-nc--text">Availability in stores</p>
                     <a href="#" class="">

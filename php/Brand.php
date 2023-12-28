@@ -16,7 +16,7 @@
     <article class="brand-block">
         <div class="brand-img--two"></div>
 
-        <div>
+        <div class="brand-block--svg">
             <div class="brand">
                 <a href="#" class="">
                     <svg class="brand-svg">

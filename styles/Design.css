@@ -25,6 +25,10 @@
         flex-direction: row-reverse;
     }
 
+    .design-title {
+        max-width: 300px;
+    }
+
     /* .design-text {
         max-width: 300px;
     } */
