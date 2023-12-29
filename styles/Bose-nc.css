@@ -117,7 +117,6 @@
     .bose-nc--img,
     .bose-white--img {
         width: 700px;
-        /* width: 100%; */
         height: 664px;
         margin-bottom: 0;
         transform: translateX(100px);
@@ -127,7 +126,6 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        /* max-width: 600px; */
     }
 
     .bose-nc--title {
@@ -137,6 +135,5 @@
 
     .bose-nc--parens {
         width: 400px;
-        /* width: 100%; */
     }
 }

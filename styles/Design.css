@@ -1,6 +1,3 @@
-/* .design-title {
-    max-width: 250px;
-} */
 
 .design-img {
     width: 100%;
@@ -29,18 +26,12 @@
         max-width: 300px;
     }
 
-    /* .design-text {
-        max-width: 300px;
-    } */
-
     .design-img {
         max-width: 350px;
         height: 540px;
         transform: translateX(-60px);
     }
 }
-
-/* ====================================== */
 
 /* Media для desktop */
 
@@ -54,8 +45,4 @@
     .design-title {
         max-width: 550px;
     }
-
-    /* .design-text {
-        max-width: 550px;
-    } */
 }

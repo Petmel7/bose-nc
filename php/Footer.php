@@ -8,19 +8,19 @@
             <p class="footer-text">We'll help you find the right headphones for you.</p>
         </div>
 
-        <form class="footer-form" action="">
+        <form id="form" class="footer-form" method="post" action="sendmail.php">
             <label class="form-label" for="">
-                <input class="form-input" type="text" placeholder="Your name">
+                <input class="form-input _req" type="text" placeholder="Your name" name="name">
             </label>
             <label class="form-label" for="">
-                <input class="form-input" type=" email" placeholder="Your e-mail">
+                <input class="form-input _req" type="email" placeholder="Your e-mail" name="email">
             </label>
             <label class="form-label" for="">
-                <textarea class="form-input form-textarea" name="" id="" cols=" 30" rows="10" placeholder="Send us a message"></textarea>
+                <textarea class="form-input form-textarea" cols="30" rows="10" placeholder="Send us a message" name="comment"></textarea>
             </label>
 
             <div class="form-checkbox">
-                <input class="form-checkbox--input" type="checkbox" id="checkbox">
+                <input class="form-checkbox--input _req" type="checkbox" id="checkbox" value="agree" name="agree">
                 <label class="form-checkbox--label" for="checkbox">
                     <div class="form-checkbox--icon">
                         <svg class="form-checkbox--svg">
@@ -33,6 +33,7 @@
 
             <button class="form-button" type="submit">SEND</button>
         </form>
+
     </div>
 
     <div class="general-footer--block">
@@ -60,18 +61,17 @@
                 </li>
             </ul>
         </div>
-        <!-- <div class="number-block"> -->
         <p class="footer-number">8 (800) 111-11-11</p>
-        <!-- </div> -->
     </div>
 </footer>
 
-<script src="php/burger.js"></script>
-<script src="php/FAQ.js"></script>
-<script src="php/bose-checkbox.js"></script>
-<script src="php/bose-modal.js"></script>
+<script src="js/burger.js"></script>
+<script src="js/FAQ.js"></script>
+<script src="js/bose-checkbox.js"></script>
+<script src="js/bose-modal.js"></script>
 <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
-<script src="php/reviews-slider.js"></script>
+<script src="js/reviews-slider.js"></script>
+<script src="js/form-mail.js"></script>
 
 </body>
 

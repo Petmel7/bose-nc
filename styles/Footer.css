@@ -35,6 +35,10 @@
     caret-color: var(--input-color);
 }
 
+._error {
+    border-bottom: 3px solid var(--accent-color);
+}
+
 .form-input {
     height: 30px;
 }
@@ -43,8 +47,6 @@
     height: 100px;
     resize: none;
 }
-
-/* ===================================== */
 
 .form-checkbox {
     display: flex;
@@ -70,6 +72,10 @@
     margin-right: 24px;
 }
 
+.form-checkbox--input._error+.form-checkbox--label .form-checkbox--icon {
+    border: 2px solid var(--accent-color);
+}
+
 .form-checkbox--svg {
     width: 30px;
     height: 30px;
@@ -83,8 +89,6 @@
 .form-checkbox--input:checked+.form-checkbox--label .form-checkbox--svg {
     display: block;
 }
-
-/* ==================================================== */
 
 .checkbox-text {
     font-size: 14px;
@@ -162,18 +166,15 @@
     .form-button {
         max-width: 294px;
         padding: 21px 0;
-        /* margin-bottom: 150px; */
     }
 
     .footer-block--list {
         display: flex;
-        /* margin-bottom: 52px; */
     }
 }
 
 @media screen and (min-width: 480px) {
     .footer-img {
-        /* width: 1023px; */
         width: 100%;
         height: 360px;
         background-image: url('../images/darck\ tablet.png');
@@ -197,19 +198,16 @@
 
     .number-block {
         display: flex;
-        /* display: block; */
         justify-content: flex-end;
     }
 }
 
 @media screen and (min-width: 1023px) {
     .footer-img {
-        /* width: 1640px; */
+        width: 1640px;
         height: 524px;
-        width: 100%;
         margin: 0 auto;
         margin-bottom: 172px;
-        /* margin: 0 auto; */
     }
 
     .footer-block {

@@ -170,8 +170,6 @@
     }
 }
 
-/* ============================================== */
-
 @media screen and (min-width: 480px) and (max-width: 1023px) {
     .menu {
         max-height: 250px;

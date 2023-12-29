@@ -25,7 +25,7 @@
                 </a>
             </div>
 
-            <h3 class="general-title--small">Never stop dreaming. Always dream of the best, and think about how to achieve it.</h3>
+            <h3 class="brand-title--small general-title--small">Never stop dreaming. Always dream of the best, and think about how to achieve it.</h3>
             <p class="brand-text">Amar Bose is a company founder </p>
         </div>
     </article>

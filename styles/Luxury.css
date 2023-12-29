@@ -1,13 +1,4 @@
 
-
-/* .luxury-img {
-    width: 100%;
-    height: 380px;
-    background-image: url('../images/headphones\ sunset.png');
-    background-size: cover;
-    margin-bottom: 32px;
-} */
-
 .luxury-block {
     margin-bottom: 42px;
 }
@@ -32,7 +23,6 @@
 
 @media screen and (min-width: 480px) {
     .luxury-container {
-        /* width: 1023px; */
         width: 100%;
         margin: 0 auto;
     }
@@ -63,16 +53,11 @@
     .luxury-block {
         margin-bottom: 0;
     }
-
-    /* .general-text {
-        max-width: 300px;
-    } */
 }
 
 @media screen and (min-width: 1023px) {
     .luxury-container {
-        /* width: 1640px; */
-        width: 100%;
+        width: 1640px;
         margin: 0 auto;
     }
 
