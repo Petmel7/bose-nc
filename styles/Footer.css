@@ -257,8 +257,16 @@
 
 }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .footer-img {
+        width: 768px;
+    }
+}
+
 @media screen and (min-width: 1440px) {
     .footer-img {
         width: 100%;
     }
 }
+
+

@@ -22,14 +22,14 @@
 }
 
 @media screen and (min-width: 480px) {
-    .luxury-container {
+    /* .luxury-container {
         width: 100%;
         margin: 0 auto;
-    }
+    } */
 
     .luxury-title {
         text-align: right;
-        margin-right: 60px;
+        padding-right: 60px;
     }
 
     .luxury-img {
@@ -63,6 +63,16 @@
 
     .luxury-two--img {
         height: 524px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .luxury-container {
+        width: 768px;
+    }
+
+    .luxury-two--img {
+        width: 100%;
     }
 }
 
