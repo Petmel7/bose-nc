@@ -72,6 +72,7 @@
 <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
 <script src="js/reviews-slider.js"></script>
 <script src="js/form-mail.js"></script>
+<script src="js/signup.js"></script>
 
 </body>
 

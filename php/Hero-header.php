@@ -62,7 +62,45 @@
                         <a href="#">Payment and delivery</a>
                     </li>
                 </ul>
+
+                <div class="toggle-block">
+                    <p class="toggle-sign" data-target="signup">Sign Up</p>
+
+                    <div class="form-sign" data-id="signup">
+                        <form action="signup.php" method="post">
+                            <label class="form-label" for="">
+                                <input class="form-input" type="text" placeholder="Login" name="login">
+                            </label>
+                            <label class="form-label" for="">
+                                <input class="form-input" type="text" placeholder="Pasword" name="password">
+                            </label>
+                            <label class="form-label" for="">
+                                <input class="form-input" type="text" placeholder="Repeat pasword" name="repeat-password">
+                            </label>
+                            <label class="form-label" for="">
+                                <input class="form-input" type="text" placeholder="Email" name="email">
+                            </label>
+                            <button class="sign-button form-button" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+
+                    <p class="toggle-sign" data-target="signin">Sign In</p>
+
+                    <div class="form-sign" data-id="signin">
+                        <form action="signin.php" method="post">
+                            <label class="form-label" for="">
+                                <input class="form-input" type="text" placeholder="Login" name="login">
+                            </label>
+                            <label class="form-label" for="">
+                                <input class="form-input" type="text" placeholder="Pasword" name="pasword">
+                            </label>
+                            <button class="sign-button form-button" type="submit">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+
             </nav>
+
         </div>
 
         <section class="hero-block">
