@@ -67,7 +67,7 @@
                     <p class="toggle-sign" data-target="signup">Sign Up</p>
 
                     <div class="form-sign" data-id="signup">
-                        <form action="signup.php" method="post">
+                        <form id="signupForm" action="signup.php" method="post">
                             <label class="form-label" for="">
                                 <input class="form-input" type="text" placeholder="Login" name="login">
                             </label>
@@ -87,12 +87,12 @@
                     <p class="toggle-sign" data-target="signin">Sign In</p>
 
                     <div class="form-sign" data-id="signin">
-                        <form action="signin.php" method="post">
+                        <form id="signinForm" action="signin.php" method="post">
                             <label class="form-label" for="">
                                 <input class="form-input" type="text" placeholder="Login" name="login">
                             </label>
                             <label class="form-label" for="">
-                                <input class="form-input" type="text" placeholder="Pasword" name="pasword">
+                                <input class="form-input" type="text" placeholder="Password" name="password">
                             </label>
                             <button class="sign-button form-button" type="submit">Sign In</button>
                         </form>

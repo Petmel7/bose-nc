@@ -73,6 +73,7 @@
 <script src="js/reviews-slider.js"></script>
 <script src="js/form-mail.js"></script>
 <script src="js/signup.js"></script>
+<script src="js/signup-signin.js"></script>
 
 </body>
 
