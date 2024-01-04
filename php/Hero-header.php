@@ -103,12 +103,6 @@
                     <a href="php/form-comm.php" style="color:red">Comments</a>
                 </div>
 
-                <form class="comements-form" action="comments.php" method="post">
-                    <input type="text" placeholder="Name" name="name">
-                    <textarea class="" cols="30" rows="10" placeholder="Comment" name="comment"></textarea>
-                    <button type="submit">Send</button>
-                </form>
-
             </nav>
 
         </div>

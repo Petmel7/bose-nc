@@ -20,6 +20,11 @@ if (empty($login) || empty($password)) {
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             echo 'Вітаємо, ви успішно увійшли в свій акаунт: ' . $row['login'];
+
+            session_start();
+            $_SESSION['user'] = $login;
+            header("Location: php/form-comm.php");
+            exit();
         }
     } else {
         echo 'Немає такого користувача';
