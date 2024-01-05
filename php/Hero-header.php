@@ -99,10 +99,6 @@
                     </div>
                 </div>
 
-                <div>
-                    <a href="php/form-comm.php" style="color:red">Comments</a>
-                </div>
-
             </nav>
 
         </div>

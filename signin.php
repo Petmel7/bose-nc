@@ -23,7 +23,7 @@ if (empty($login) || empty($password)) {
 
             session_start();
             $_SESSION['user'] = $login;
-            header("Location: php/form-comm.php");
+            header("Location: form-comm.php");
             exit();
         }
     } else {
