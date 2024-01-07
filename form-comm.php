@@ -16,42 +16,66 @@
         <button type="submit">Send</button>
     </form>
 
-    <div class="comments-container" id="commentsContainer"></div>
+    <ul class="comments-container" id="commentsContainer"></ul>
 
     <script>
-        function displayComments() {
-            let xhr = new XMLHttpRequest();
+        async function displayComments() {
+            try {
+                const response = await fetch('comments.php', {
+                    method: 'GET'
+                });
 
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    let responseString = xhr.responseText;
-                    let responseObject = {};
-
-                    if (responseString.trim() !== '') {
-                        responseObject = JSON.parse(responseString);
-                    }
-
+                if (response.ok) {
+                    const comments = await response.json();
                     let commentsContainer = document.getElementById('commentsContainer');
-                    commentsContainer.innerHTML = '';
 
-                    if (responseObject.hasOwnProperty('message')) {
-                        let commentDiv = document.createElement('div');
-                        commentDiv.textContent = responseObject.message;
-                        commentsContainer.appendChild(commentDiv);
-                    } else {
-                        responseObject.forEach(function(comment) {
-                            let commentDiv = document.createElement('div');
-                            commentDiv.textContent = comment.name + ': ' + comment.comment;
-                            commentsContainer.appendChild(commentDiv);
-                        });
-                    }
+                    const commentsHTML = comments.map(comment => `
+                        <li>
+                            <p>${comment.name}</p>
+                            <p>${comment.comment}</p>
+                            <span>${comment.created_at}</span>
+                            <button>Delete</button>
+                        </li>
+                    `).join('');
+
+                    commentsContainer.insertAdjacentHTML('beforeend', commentsHTML);
+
+                } else {
+                    throw new Error('Network response was not ok.');
                 }
-            };
-
-            xhr.open('GET', 'comments.php', true);
-            xhr.send();
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Помилка');
+            }
         }
 
+        // Обробник події для форми
+        const commentsForm = document.querySelector('.comments-form');
+
+        commentsForm.addEventListener('submit', async function(event) {
+            event.preventDefault(); // Заборона стандартної відправки форми
+
+            try {
+                const formData = new FormData(this);
+                const response = await fetch('comments.php', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    // Виклик функції відображення коментарів після успішного відправлення
+                    displayComments();
+                    this.reset(); // Очищення форми
+                } else {
+                    throw new Error('Network response was not ok.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Помилка');
+            }
+        });
+
+        // Виклик функції для відображення коментарів при завантаженні сторінки
         displayComments();
     </script>
 
