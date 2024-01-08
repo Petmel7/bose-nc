@@ -154,15 +154,3 @@ span {
         max-width: 550px;
     }
 }
-
-
-
-
-.comements-form {
-    display: flex;
-    /* display: block; */
-}
-
-.comements-form input {
-    outline: 1px solid red;
-}

@@ -1,0 +1,99 @@
+/* Стилі для форми */
+
+.container-comments {
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+div,
+ul,
+li,
+p,
+a,
+svg,
+use,
+span {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.comments-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+/* Стилі для текстового поля для імені */
+.comments-form input[type="text"],
+.comments-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background-color: #191919;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.30);
+}
+
+/* Стилі для кнопки */
+.comments-form button {
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #191919;
+    border: 2px solid #DF3D3A;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.comments-form button:hover {
+    border: 2px solid #870200;
+}
+
+/* Стилі для контейнера коментарів */
+.comments-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Стилі для окремого коментаря */
+.comments-container li {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comments-container li p {
+    margin-right: 10px;
+    color: white;
+}
+
+.comments-container li span {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-right: auto;
+}
+
+.comments-container li button {
+    padding: 8px 12px;
+    background-color: #DF3D3A;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comments-container li button:hover {
+    background-color: #870200;
+}

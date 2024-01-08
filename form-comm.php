@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>bose</title>
-    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="comments.css">
 </head>
 
 <body>
 
-    <form class="comments-form" action="comments.php" method="post">
-        <input type="text" placeholder="Name" name="name">
-        <textarea cols="30" rows="10" placeholder="Comment" name="comment"></textarea>
-        <button type="submit">Send</button>
-    </form>
+    <section class="container-comments">
+        <form class="comments-form" action="comments.php" method="post">
+            <input type="text" placeholder="Name" name="name">
+            <textarea cols="30" rows="10" placeholder="Comment" name="comment"></textarea>
+            <button type="submit">Publish</button>
+        </form>
 
-    <ul class="comments-container" id="commentsContainer"></ul>
+        <ul class="comments-container" id="commentsContainer"></ul>
+    </section>
 
     <script>
         async function displayComments() {
@@ -25,15 +28,20 @@
                     method: 'GET'
                 });
 
+                // console.log('response', response);
+
                 if (response.ok) {
                     const comments = await response.json();
+                    // console.log('comments', comments);
                     let commentsContainer = document.getElementById('commentsContainer');
+                    commentsContainer.innerHTML = '';
 
                     const commentsHTML = comments.map(comment => `
                         <li>
                             <p>${comment.name}</p>
                             <p>${comment.comment}</p>
                             <span>${comment.created_at}</span>
+
                             <button>Delete</button>
                         </li>
                     `).join('');
