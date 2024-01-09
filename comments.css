@@ -38,6 +38,10 @@ span {
     outline: none;
     background-color: #191919;
     border-bottom: 3px solid rgba(255, 255, 255, 0.30);
+
+    font-size: 16px;
+    color: white;
+    padding: 8px;
 }
 
 /* Стилі для кнопки */
@@ -54,7 +58,7 @@ span {
 }
 
 .comments-form button:hover {
-    border: 2px solid #870200;
+    border: 3px solid #870200;
 }
 
 /* Стилі для контейнера коментарів */

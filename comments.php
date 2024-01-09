@@ -136,6 +136,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     handleGetRequest();
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
+    handleDeleteRequest();
+}
+
+
 function handlePostRequest()
 {
     global $conn;
@@ -183,5 +188,30 @@ function handleGetRequest()
         echo json_encode($comments);
     } else {
         echo json_encode(['message' => 'Немає коментарів']);
+    }
+}
+
+function handleDeleteRequest()
+{
+    global $conn;
+
+    // Отримання ідентифікатора коментаря для видалення
+    parse_str(file_get_contents("php://input"), $_DELETE);
+    $commentIdToDelete = $_DELETE['comment_id']; // Припустимо, це приходить з фронтенду
+
+    if (!empty($commentIdToDelete)) {
+        $user_id = $_SESSION['user']['id']; // Отримання ID залогіненого користувача
+
+        $sql = "DELETE FROM `comments` WHERE id = ? AND user_id = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("ii", $commentIdToDelete, $user_id);
+
+        if ($stmt->execute()) {
+            echo json_encode(['message' => 'Коментар успішно видалено']);
+        } else {
+            echo json_encode(['error' => 'Помилка: ' . $conn->error]);
+        }
+    } else {
+        echo json_encode(['error' => 'Помилка: Неправильний ідентифікатор коментаря']);
     }
 }
