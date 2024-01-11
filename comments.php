@@ -1,6 +1,6 @@
 <?php
 
-require_once 'vendor/autoload.php'; // Підключення автозавантажувача Composer
+require_once 'vendor/autoload.php';
 
 use Monolog\Level;
 use Monolog\Logger;
@@ -14,8 +14,10 @@ $logger->pushHandler(new StreamHandler(__DIR__ . '/logs/comments.log', Level::De
 $logger->pushHandler(new FirePHPHandler());
 
 
-session_start();
 require_once('db.php');
+
+session_start();
+
 header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -25,10 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     handleGetRequest();
 }
-
-// if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
-//     handleDeleteRequest($commentId);
-// }
 
 if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
     handleDeleteRequest();
@@ -44,7 +42,7 @@ function handlePostRequest()
         $comment = $_POST['comment'];
         $user_id = $_SESSION['user']['id']; // Отримання ID залогіненого користувача
 
-        // $logger->info('Received a DELETE request for comment with ID: ' . $user_id);
+        $logger->info('$user_id: ' . $user_id);
 
         if (!empty($name) && !empty($comment) && !empty($user_id)) {
             $sql = "INSERT INTO `comments` (name, comment, user_id) VALUES (?, ?, ?)";
@@ -63,7 +61,6 @@ function handlePostRequest()
         echo json_encode(['error' => 'Помилка: Не вдалося отримати дані з форми']);
     }
 }
-
 
 function handleGetRequest()
 {
@@ -87,21 +84,77 @@ function handleGetRequest()
     }
 }
 
+// function handleDeleteRequest()
+// {
+//     global $conn, $logger;
+
+//     // Перевірка, чи користувач залогінений
+//     if (!isset($_SESSION['user'])) {
+//         echo json_encode(['error' => 'Користувач не авторизований']);
+//         return;
+//     }
+
+//     $data = json_decode(file_get_contents("php://input"), true);
+
+//     // Перевірка наявності ідентифікатора коментаря
+//     if (!isset($data['comment_id'])) {
+//         echo json_encode(['error' => 'Неправильний запит. Не вдалося отримати ідентифікатор коментаря']);
+//         return;
+//     }
+
+//     $commentId = $data['comment_id'] ?? null; // Припустимо, це приходить з фронтенду
+//     $user_id = $_SESSION['user']['id'] ?? null; // Отримання ID залогіненого користувача
+
+//     $logger->info('$commentId: ' . $commentId);
+//     $logger->info('$user_id: ' . $user_id);
+
+//     if (!empty($commentId) && !empty($user_id)) {
+//         $sql = "DELETE FROM `comments` WHERE comment_id = ? AND user_id = ?";
+//         $stmt = $conn->prepare($sql);
+//         $stmt->bind_param("ii", $commentId, $user_id);
+
+//         $logger->info('$commentId' . json_encode($commentId));
+//         $logger->info('$user_id' . json_encode($user_id));
+
+//         if ($stmt->execute()) {
+//             echo json_encode(['message' => 'Коментар успішно видалено']);
+//         } else {
+//             echo json_encode(['error' => 'Помилка: ' . $conn->error]);
+//         }
+//     } else {
+//         echo json_encode(['error' => 'Помилка: Неправильний ідентифікатор коментаря або користувач не авторизований']);
+//     }
+// }
+
+
 function handleDeleteRequest()
 {
     global $conn, $logger;
 
+    // Перевірка, чи користувач залогінений
+    // if (!isset($_SESSION['user'])) {
+    //     echo json_encode(['error' => 'Користувач не авторизований']);
+    //     return;
+    // }
+
     $data = json_decode(file_get_contents("php://input"), true);
 
+    // Перевірка наявності ідентифікатора коментаря
+    if (!isset($data['comment_id'])) {
+        echo json_encode(['error' => 'Неправильний запит. Не вдалося отримати ідентифікатор коментаря']);
+        return;
+    }
+
     $commentId = $data['comment_id'] ?? null; // Припустимо, це приходить з фронтенду
-    // $logger->info('Received a DELETE request for comment with ID: ' . $commentId);
+
+    $logger->info('$commentId: ' . $commentId);
 
     if (!empty($commentId)) {
-        $user_id = $_SESSION['user']['id']; // Отримання ID залогіненого користувача
-
-        $sql = "DELETE FROM `comments` WHERE id = ? AND user_id = ?";
+        $sql = "DELETE FROM `comments` WHERE comment_id = ?";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ii", $commentId, $user_id);
+        $stmt->bind_param("i", $commentId);
+
+        $logger->info('$commentId' . json_encode($commentId));
 
         if ($stmt->execute()) {
             echo json_encode(['message' => 'Коментар успішно видалено']);
@@ -113,58 +166,41 @@ function handleDeleteRequest()
     }
 }
 
-// $logger->info('Received a DELETE request for comment with ID: ' . print_r($_DELETE, true));
-// $logger->info('Received a DELETE request for comment with ID: ' . print_r($_REQUEST, true));
-
-
-
-
-
-
-// function handleDeleteRequest($commentId)
-// {
-//     global $conn, $logger;
-
-//     // Отримання ідентифікатора коментаря для видалення
-//     parse_str(file_get_contents("php://input"), $_DELETE);
-//     $commentId = $_DELETE['comment_id']; // Припустимо, це приходить з фронтенду
-
-//     // $logger->info('Received a DELETE request for comment with ID: ' . $commentId);
-
-//     if (!empty($commentId)) {
-//         $user_id = $_SESSION['user']['id']; // Отримання ID залогіненого користувача
-
-//         $sql = "DELETE FROM `comments` WHERE id = ? AND user_id = ?";
-//         $stmt = $conn->prepare($sql);
-//         $stmt->bind_param("ii", $commentId, $user_id);
-
-//         if ($stmt->execute()) {
-//             echo json_encode(['message' => 'Коментар успішно видалено']);
-//         } else {
-//             echo json_encode(['error' => 'Помилка: ' . $conn->error]);
-//         }
-//     } else {
-//         echo json_encode(['error' => 'Помилка: Неправильний ідентифікатор коментаря']);
-//     }
-// }
-
 
 
 // function handleDeleteRequest()
 // {
 //     global $conn, $logger;
 
-//     // Отримання ідентифікатора коментаря для видалення
-//     parse_str(file_get_contents("php://input"), $_DELETE);
-//     $commentIdToDelete = $_DELETE['comment_id']; // Припустимо, це приходить з фронтенду
+//     // Перевірка, чи користувач авторизований
+//     if (!isset($_SESSION['user'])) {
+//         echo json_encode(['error' => 'Користувач не авторизований']);
+//         return;
+//     }
 
-//     if (!empty($commentIdToDelete)) {
+//     $data = json_decode(file_get_contents("php://input"), true);
 
-//         $user_id = $_SESSION['user']['id']; // Отримання ID залогіненого користувача
+//     // Перевірка наявності ідентифікатора коментаря
+//     if (!isset($data['comment_id'])) {
+//         echo json_encode(['error' => 'Неправильний запит. Не вдалося отримати ідентифікатор коментаря']);
+//         return;
+//     }
 
-//         $sql = "DELETE FROM `comments` WHERE id = ? AND user_id = ?";
+//     // Отримання ID користувача з сесії
+//     $user_id = $_SESSION['user']['id'];
+
+//     $commentId = $data['comment_id'] ?? null;
+
+//     $logger->info('$commentId: ' . $commentId);
+//     $logger->info('$user_id: ' . $user_id);
+
+//     if (!empty($commentId)) {
+//         $sql = "DELETE FROM `comments` WHERE comment_id = ? AND user_id = ?";
 //         $stmt = $conn->prepare($sql);
-//         $stmt->bind_param("ii", $commentIdToDelete, $user_id);
+//         $stmt->bind_param("ii", $commentId, $user_id);
+
+//         $logger->info('$commentId' . json_encode($commentId));
+//         $logger->info('$user_id' . json_encode($user_id));
 
 //         if ($stmt->execute()) {
 //             echo json_encode(['message' => 'Коментар успішно видалено']);
@@ -176,39 +212,12 @@ function handleDeleteRequest()
 //     }
 // }
 
-
-
-
-
-
-
-
-
-// function deleteComment($commentId)
-// {
-//     // Підключення до бази даних (замість db_connect використайте свою функцію підключення)
-//     global $conn; // Приклад, якщо у вас є функція підключення db_connect()
-
-//     // Підготовка запиту для видалення коментаря за його ID
-//     $sql = "DELETE FROM comments WHERE comment_id = ?";
-
-//     // Підготовка та виконання запиту
-//     $stmt = $conn->prepare($sql);
-//     $stmt->bind_param("i", $commentId); // "i" - тип даних (ціле число)
-
-//     if ($stmt->execute()) {
-//         // Успішно видалено
-//         echo "Коментар успішно видалено";
-//     } else {
-//         // Помилка під час видалення
-//         echo "Помилка під час видалення коментаря: " . $conn->error;
-//     }
-
-//     // Закриття підготовленого запиту та з'єднання з базою даних
-//     $stmt->close();
-//     $conn->close();
-// }
-
-// // Виклик функції deleteComment з переданим ID коментаря для видалення
-// $commentIdToDelete = $_POST['comment_id']; // Припустимо, що ID коментаря приходить через POST-запит
-// deleteComment($commentIdToDelete);
+if (isset($_SESSION['user'])) {
+    // Користувач авторизований
+    $user_id = $_SESSION['user']['id'];
+    $user_login = $_SESSION['user']['login'];
+    echo "Вітаємо, користувачу з ID $user_id (логін: $user_login)!";
+} else {
+    // Користувач не авторизований
+    echo "Користувач не авторизований.";
+}
