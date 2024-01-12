@@ -91,7 +91,7 @@ if (empty($login) || empty($password) || empty($repeatpassword) || empty($email)
                 'id' => $conn->insert_id, // Отримання ID останньої вставленої записи
                 'login' => $login
             ];
-            header("Location: form-comm.php");
+            header("Location: signin-page.php");
             exit();
         } else {
             echo 'Помилка' . $conn->error;

@@ -61,7 +61,7 @@ if (empty($login) || empty($password)) {
 
             session_start();
             $_SESSION['user'] = [
-                'id' => $row['id'],
+                'id' => $row['user_id'],
                 'login' => $row['login']
             ];
 
