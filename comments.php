@@ -65,27 +65,27 @@ function handlePostRequest()
     }
 }
 
-// function handleGetRequest()
-// {
-//     global $conn;
-//     $sql = "SELECT * FROM `comments`";
-//     $result = $conn->query($sql);
+function handleGetRequest()
+{
+    global $conn;
+    $sql = "SELECT * FROM `comments`";
+    $result = $conn->query($sql);
 
-//     if ($result->num_rows > 0) {
-//         $comments = array();
-//         while ($row = $result->fetch_assoc()) {
-//             $comment = array(
-//                 'name' => $row['name'],
-//                 'comment' => $row['comment'],
-//                 'created_at' => $row['created_at']
-//             );
-//             $comments[] = $comment;
-//         }
-//         echo json_encode($comments);
-//     } else {
-//         echo json_encode(['message' => 'Немає коментарів']);
-//     }
-// }
+    if ($result->num_rows > 0) {
+        $comments = array();
+        while ($row = $result->fetch_assoc()) {
+            $comment = array(
+                'name' => $row['name'],
+                'comment' => $row['comment'],
+                'created_at' => $row['created_at']
+            );
+            $comments[] = $comment;
+        }
+        echo json_encode($comments);
+    } else {
+        echo json_encode(['message' => 'Немає коментарів']);
+    }
+}
 
 // function handleDeleteRequest()
 // {
