@@ -93,52 +93,6 @@
         // Виклик функції для завантаження коментарів при завантаженні сторінки
         displayComments();
 
-
-        // // Оновлена функція deleteComment
-        // async function deleteComment(commentId) {
-        //     try {
-        //         const response = await fetch('comments.php', {
-        //             method: 'DELETE',
-        //             body: JSON.stringify({
-        //                 comment_id: commentId
-        //             })
-        //         });
-
-        //         console.log('commentId', commentId);
-
-        //         if (response.ok) {
-        //             // Оновлення списку коментарів після видалення (якщо потрібно)
-        //             displayComments();
-        //         } else {
-        //             throw new Error('Network response was not ok.');
-        //         }
-        //     } catch (error) {
-        //         console.error('Error:', error);
-        //         alert('Помилка');
-        //     }
-        // }
-
-
-
-
-
-
-
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     // Знайдіть всі кнопки видалення
-        //     const deleteButtons = document.querySelectorAll('.delete-comment');
-
-        //     // Додайте слухача подій для кожної кнопки видалення
-        //     deleteButtons.forEach(button => {
-        //         button.addEventListener('click', async (event) => {
-        //             const commentId = event.target.dataset.commentId;
-
-        //             // Викликаємо функцію deleteComment з ідентифікатором коментаря
-        //             await deleteComment(commentId);
-        //         });
-        //     });
-        // });
-
         // Оновлена функція deleteComment
         async function deleteComment(commentId) {
             try {

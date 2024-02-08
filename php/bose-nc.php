@@ -50,4 +50,7 @@
             </form>
         </div>
     </div>
+    <button class="bose-nc-coments__button">
+        <input class="bose-nc-coments__input" type="text" />
+    </button>
 </section>
