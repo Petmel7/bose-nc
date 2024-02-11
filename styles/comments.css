@@ -101,3 +101,7 @@ span {
 .comments-container li button:hover {
     background-color: #870200;
 }
+
+.bose-nc-coments__button__label {
+    color: #fff;
+}

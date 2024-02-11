@@ -50,7 +50,8 @@
             </form>
         </div>
     </div>
-    <button class="bose-nc-coments__button">
-        <input class="bose-nc-coments__input" type="text" />
+    <button class="bose-nc-coments__button" onclick="redirectTosigninPage()">
+
     </button>
+
 </section>

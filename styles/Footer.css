@@ -1,4 +1,3 @@
-
 .form {
     margin-bottom: 72px;
 }
@@ -23,7 +22,7 @@
     padding: 16px;
 }
 
-.form-input, 
+.form-input,
 .form-textarea {
     border: none;
     outline: none;
@@ -41,6 +40,28 @@
 
 .form-input {
     height: 30px;
+}
+
+.form-signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-signin__form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+.form-signin__account {
+    color: var(--input-color);
+    text-align: center;
+}
+
+.form-signin__account a {
+    color: var(--text-color);
 }
 
 .form-textarea {
@@ -111,6 +132,10 @@
     color: var(--button-text-color);
     background-color: #191919;
     margin-top: 45px;
+}
+
+.signin-button {
+    margin-bottom: 20px;
 }
 
 .footer-children li {
@@ -268,5 +293,3 @@
         width: 100%;
     }
 }
-
-

@@ -73,6 +73,11 @@
 <script src="js/reviews-slider.js"></script>
 <script src="js/form-mail.js"></script>
 <script src="js/signup.js"></script>
+<script>
+    function redirectTosigninPage() {
+        window.location.href = 'index.php?page=signin';
+    }
+</script>
 
 </body>
 

@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>bose</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="comments.css">
-</head>
+<?php require_once __DIR__ . "../../componets/head.php"; ?>
 
 <body>
 
