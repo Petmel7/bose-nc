@@ -135,6 +135,15 @@
 }
 
 .signin-button {
+    width: 100%;
+    padding: 30px 0;
+    cursor: pointer;
+    border: 2px solid var(--accent-color);
+    font-size: 16px;
+    font-weight: var(--font-middle);
+    color: var(--button-text-color);
+    background-color: #191919;
+    margin-top: 45px;
     margin-bottom: 20px;
 }
 

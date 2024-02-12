@@ -1,10 +1,10 @@
 <?php
 $servername = 'localhost';
 $username = 'root';
-$pass = '';
+$password = '';
 $dbname = 'signupuser';
 
-$conn = mysqli_connect($servername, $username, $pass, $dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if (!$conn) {
     die("Cnnection Fialed" . mysqli_connect_error());

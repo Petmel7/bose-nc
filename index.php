@@ -4,11 +4,14 @@
 if (isset($_GET['page'])) {
     // Якщо page === 'signin', підключити сторінку входу
     if ($_GET['page'] === 'signin') {
-        require 'php/signin-page.php';
+        require 'sign-pages/signin-page.php';
     }
     // Якщо page === 'signup', підключити сторінку реєстрації
     elseif ($_GET['page'] === 'signup') {
-        require 'php/signup-page.php';
+        require 'sign-pages/signup-page.php';
+        // ============================
+    } elseif ($_GET['page'] === 'form') {
+        require 'sign-pages/form-comm.php';
     }
     // Якщо page не дорівнює ні 'signin', ні 'signup', підключити головну сторінку
     else {

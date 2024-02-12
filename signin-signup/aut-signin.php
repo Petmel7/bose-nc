@@ -1,7 +1,8 @@
 
 <?php
 
-require_once('db.php');
+require_once('../db.php');
+require_once('../actions/helpers.php');
 
 $login = $_POST['login'];
 $password = $_POST['password'];
@@ -22,13 +23,13 @@ if (empty($login) || empty($password)) {
         while ($row = $result->fetch_assoc()) {
             echo 'Вітаємо, ви успішно увійшли в свій акаунт: ' . $row['login'];
 
-            session_start();
-            $_SESSION['user'] = [
-                'id' => $row['user_id'],
-                'login' => $row['login']
-            ];
+            if (function_exists('signinUserId')) {
+                signinUserId($row);
+            }
 
-            header("Location: form-comm.php");
+            // var_dump($row['id']);
+
+            header("Location: /bose-nc/index.php?page=form");
             exit();
         }
     } else {

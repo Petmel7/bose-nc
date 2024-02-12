@@ -1,3 +1,3 @@
-// function redirectTosigninPage() {
-//     window.location.href = 'index.php?page=signin';
-// }
+function redirectTosigninPage() {
+    window.location.href = 'index.php?page=signin';
+}

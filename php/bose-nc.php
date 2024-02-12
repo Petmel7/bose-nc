@@ -51,7 +51,24 @@
         </div>
     </div>
     <button class="bose-nc-coments__button" onclick="redirectTosigninPage()">
-
+        <div class="bose-nc-coments__div">
+            <p class="bose-nc-coments__p">Додайте коментарій...</p>
+        </div>
     </button>
+
+    <style>
+        .bose-nc-coments__div {
+            padding: 8px;
+            width: 300px;
+            background-color: var(--input-color);
+            margin: 0 auto;
+            border-radius: 50px;
+        }
+
+        .bose-nc-coments__p {
+            color: #ffffff;
+            text-align: left;
+        }
+    </style>
 
 </section>
