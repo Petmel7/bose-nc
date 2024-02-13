@@ -1,3 +1,10 @@
+<?php
+require_once __DIR__ . "../../actions/helpers.php";
+
+$userId = getUserIdFromSession();
+echo "<script>let userId = " . json_encode($userId) . ";</script>";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,17 +63,24 @@
                     const commentsContainer = document.getElementById('commentsContainer');
                     commentsContainer.innerHTML = '';
 
-                    const commentsHTML = comments.map(comment => `
-                        <li>
-                            <p>${comment.name}</p>
-                            <p>${comment.comment}</p>
-                            <span>${comment.created_at}</span>
-                            <button onclick="deleteComment(${comment.comment_id})">Delete</button>
-                        </li>
-                    `).join('');
+                    const commentsHTML = comments.map(comment => {
 
-                    commentsContainer.insertAdjacentHTML('beforeend', commentsHTML);
-                    // commentsContainer.innerHTML = commentsHTML;
+                        const deleteButton = comment.authorized ? `<button class="coments-button" onclick="deleteComment(${comment.comment_id})">Delete</button>` : '';
+
+                        return `
+                        <li class="coments-child">
+                            <div>
+                                <p class="coments-child__name">${comment.name}</p>
+                                <p class="coments-child__comment">${comment.comment}</p>
+                            </div>
+                            <div class="coments-child__block">
+                                ${deleteButton}
+                                <p class="coments-child__created_at">${comment.created_at}</p>
+                            </div>
+                        </li>`;
+                    }).join('');
+
+                    commentsContainer.innerHTML = commentsHTML;
                 } else {
                     throw new Error('Network response was not ok.');
                 }
@@ -80,12 +94,19 @@
 
     <script>
         async function deleteComment(commentId) {
-            try {
-                const response = await fetch(`signin-signup/handleDeleteRequest.php?comment_id=${commentId}`, {
-                    method: 'POST'
-                });
+            console.log('userId', userId)
 
-                console.log('commentId', commentId)
+            try {
+                const response = await fetch('signin-signup/handleDeleteRequest.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        comment_id: commentId,
+                        user_id: userId
+                    }),
+                });
 
                 if (response.ok) {
                     displayComments();

@@ -23,11 +23,10 @@ if (empty($login) || empty($password)) {
         while ($row = $result->fetch_assoc()) {
             echo 'Вітаємо, ви успішно увійшли в свій акаунт: ' . $row['login'];
 
-            if (function_exists('signinUserId')) {
-                signinUserId($row);
-            }
-
-            // var_dump($row['id']);
+            $_SESSION['user'] = [
+                'id' => $row['id'],
+                'login' => $row['login']
+            ];
 
             header("Location: /bose-nc/index.php?page=form");
             exit();

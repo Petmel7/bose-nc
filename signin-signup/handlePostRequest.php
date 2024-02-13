@@ -17,7 +17,7 @@ function handlePostRequest()
         $comment = $_POST['comment'];
         $user_id = $_SESSION['user']['id'];
 
-        var_dump("user_id", $user_id);
+        // var_dump("post-user_id", $user_id);
 
         if (!empty($name) && !empty($comment) && !empty($user_id)) {
             $sql = "INSERT INTO `comments` (name, comment, user_id) VALUES (?, ?, ?)";

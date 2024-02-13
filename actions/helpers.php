@@ -2,10 +2,7 @@
 
 session_start();
 
-function signinUserId($row)
+function getUserIdFromSession(): int|null
 {
-    $_SESSION['user'] = [
-        'id' => $row['id'],
-        'login' => $row['login']
-    ];
+    return $_SESSION['user']['id'] ?? null;
 }
