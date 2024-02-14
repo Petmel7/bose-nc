@@ -116,6 +116,19 @@
     border-radius: 50px;
 }
 
+.bose-nc-coments__div {
+    padding: 8px;
+    width: 300px;
+    background-color: var(--input-color);
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.bose-nc-coments__p {
+    color: #ffffff;
+    text-align: left;
+}
+
 /* Media */
 
 @media screen and (min-width: 480px) {
@@ -123,6 +136,12 @@
     .bose-nc--img,
     .bose-white--img {
         height: 850px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .bose-nc-coments__button {
+        max-width: 600px;
     }
 }
 

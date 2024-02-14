@@ -2,7 +2,7 @@
 <?php
 
 require_once('../db.php');
-require_once('../actions/helpers.php');
+require_once __DIR__ . "../../actions/helpers.php";
 
 $login = $_POST['login'];
 $password = $_POST['password'];
