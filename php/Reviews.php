@@ -4,7 +4,9 @@
 
         <div class="reviews-block">
             <div class="reviews-video--block">
-                <iframe class="reviews-video" src="https://www.youtube.com/embed/VqP11Ma_2Fk?si=sfzHEIALDhQH-97M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <iframe class="reviews-video" src="https://www.youtube-nocookie.com/embed/VqP11Ma_2Fk?si=sfzHEIALDhQH-97M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
             </div>
             <article class="reviews-article">
                 <h3 class="reviews-text--red general-title--small">Bose Сorporation</h3>
@@ -14,7 +16,9 @@
 
         <div class="reviews-block">
             <div class="reviews-video--block">
-                <iframe class="reviews-video" src="https://www.youtube.com/embed/BUyLpf-u97Y?si=-hFKgWrvZZvHfjjy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <iframe class="reviews-video" src="https://www.youtube-nocookie.com/embed/BUyLpf-u97Y?si=-hFKgWrvZZvHfjjy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
             </div>
             <article class="reviews-article">
                 <h3 class="reviews-text--red general-title--small">Bose Сorporation</h3>
@@ -24,7 +28,9 @@
 
         <div class="reviews-block">
             <div class="reviews-video--block">
-                <iframe class="reviews-video" src="https://www.youtube.com/embed/NgtznBDFRUo?si=vt9XjiPDscALGLOJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <iframe class="reviews-video" src="https://www.youtube-nocookie.com/embed/NgtznBDFRUo?si=vt9XjiPDscALGLOJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
             </div>
             <article class="reviews-article">
                 <h3 class="reviews-text--red general-title--small">Bose Сorporation</h3>
